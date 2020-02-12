@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include ('../partials/newHead')  %> 
+        
+        
+    </head>
+    <body>
+        <%- include ('../partials/header') %> 
+        <h1 style="color: yellow;">Hello <%= firstName+ ' ' +lastName %> !</h1>
+        <p><%= color %>, <%= car %>  </p> 
+        <img src="/assets/fire_flower.jpg" alt="car">
+        <div>
+            <% places.forEach(({city, state}, idx)=> {%>
+            <li><%= idx+1 %>.<%= city %>, <%= state %>   </li>
+            <%})%> 
+
+        </div>
+    </body>
+</html>

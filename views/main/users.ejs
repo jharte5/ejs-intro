@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%include ('../partials/newHead') %> 
+    </head>
+    <body>
+        <% include ('../partials/header') %> 
+        <% people.forEach(({name, city}, idx) => {%>
+            <ol> <%= idx+1 %>.<%= name %> is from <%= city %> </ol> 
+        <%})  %> 
+    </body>
+</html>
